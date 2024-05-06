@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    background: rgb(43, 1, 82);
+}
+
+/*Header content start*/
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:35px 12%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color:white;
+    font-weight: 600;
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+.logo:hover{
+    color:aqua;
+    text-shadow: 0 0 25px aqua;
+    transform: scale(1.0);
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color:white;
+    font-weight: 500;
+    margin:0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.navbar a:hover,.navbar a:active{
+    color:aqua;
+    border-bottom: 3px solid transparent;
+    text-decoration:solid white;
+    
+}
+/*Header content end*/
+
+/*Home content start*/
+#Home{
+    width:100%;
+    min-height: 100vh;
+    
+    color:white;
+    display:flex;
+    align-items: center;
+    gap:5em;
+    padding:30px 12% 0;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+.home-content{
+    max-width: 800px;
+   
+
+}
+.home-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+.home-content h1 span{
+    color:#01CAA6;
+}
+.home-content p{
+    font-size: 18px;
+    margin:25px 0 30px;
+    font-family: 'Roboto',sans-serif;
+     line-height: 1.3em;
+} 
+.img-box img{
+    width:300px;
+    height:290px;
+    border-radius: 50%;
+    border:solid aqua 2px;
+
+}
+@media(max-width:813px){
+    .home-content h1{
+        font-size: 40px;
+        line-height: 1.2;
+    }
+}
+@media(max-width:695px){
+    #Home {
+       display:grid;
+       grid-template-columns: 1fr;
+       
+    }
+    .img-box{
+        display: flex;
+        align-items: center;
+       justify-content: center;
+    }
+
+}
+@media(max-width:370px){
+    .img-box img{
+        width:260px;
+        height:250px;
+        
+    
+    }
+}
+@media(max-width:522px){
+    #Home{
+        margin-top: 120px;
+    }
+    .navbar{
+        display:none;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-content h1{
+        font-size: 30px;
+       
+    }
+}
+/*Home content end*/
+
+/*Education content start*/
+#Education{
+    margin-top:200px;
+  
+
+}
+.Education-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:800;
+    font-size: 25px;
+    color:white;
+}
+.Education-title span{
+    color:aqua;
+}
+
+.Education-content{
+    width:100%;
+    min-height:100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.Education-content div{
+    width:250px;
+    height:220px;
+    border: 3px solid transparent;
+    background:linear-gradient(rgb(43, 1, 82), rgb(43, 1, 82)) padding-box,linear-gradient(225deg,#01CAA6,#B75EF4) border-box;
+    /*border-image:linear-gradient(100deg,#01CAA6,#B75EF4);
+    border-image-slice:1;*/
+    border-radius: 10%;
+    margin:30px;
+    padding:20px;
+    color:white;
+    transition: 0.5s ease;
+    gap:0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ .Education-content div .skill-para{
+    margin-top:20px;
+    margin-left: 10px;
+}
+.Education-content div::after{
+    border-radius: 10%;
+}
+
+
+.Education-content div:hover{
+  /*  box-shadow: 0px 0px 20px aqua;*/
+  box-shadow: 0px 0px 20px #B75EF4;
+    transform: scale(1.04);
+}
+.Education-content div p{
+    margin-top: 10px;
+    font-weight: 550;
+}
+.clg-content{
+    line-height: 25px;
+}
+.clg-content :last-child{
+    margin-left:-140px;
+}
+.skills img{
+    width:80px;
+    height:80px;
+    border-radius: 20px;
+   
+}
+.html-img, .javascript-img{
+    border-radius: 20px;
+}
+@media(max-width:1200px) {
+    
+    .Education-content div{
+        margin-top:20px;
+    }
+}
+
+@media(max-width:692px){
+    .Education-content{
+        width:100%;
+    }
+}
+@media(max-width:610px){
+    .Education-content div{
+        margin-top:100px;
+    }
+    .Education-title{
+        font-weight:800;
+        font-size: 23px;
+    }
+}
+/*Education content end*/
+
+/*contact content start*/
+.contact-container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   
+}
+.contact-left{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.contact-left-title h2{
+   font-weight: 600;
+   font-size: 40px;
+   margin-bottom:5px;
+   color:white;
+}
+.contact-left-title hr{
+    background-color:aqua;
+    width:120px;
+    height:5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width:400px;
+    height:50px;
+    border:none;
+    outline:none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    color:white;
+    font-size: 15px;
+}
+.contact-left textarea{
+    height:140px;
+    width:400px;
+    padding-top:15px;
+    border-radius: 20px;
+    border:none;
+    resize: none;
+}
+.contact-inputs:focus{
+    border:2px solid #ff994f;
+}
+
+.contact-inputs::placeholder{
+    color:#a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color:black;
+    gap:10px;
+    border:2px solid transparent;
+    border-radius: 50px;
+    background-color: aqua;
+    cursor:pointer;
+    font-weight: 550;
+   
+}
+.contact-left button:hover{
+    background:linear-gradient(white,aqua) padding-box,linear-gradient(225deg,#ff994f,#ff994f) border-box;
+    transition: 0.4s ease;
+    color:black;
+    background-color: white;
+}
+
+@media(max-width:410px){
+    .contact-inputs{
+        width:300px;
+        height:30px;
+}
+.contact-left textarea{
+    height:150px;
+    width:300px;
+    
+}
+}
+/*contact content end*/

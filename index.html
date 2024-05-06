@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Jagan Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+            100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c1cdcec377.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+     <!--Header content start-->
+    <header class="header">
+        <a href="#" class="logo">Jagan Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#Education">Education</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <!--Header content end-->
+
+    <!--Home content start-->
+    <section  id="Home">
+        <div class="home-content">
+            <h1>I'm <span>Jagan<br></span>
+            a Frontend Developer
+            </h1>
+            <p>Hello! i'm a recent graduate with passion for web development and software engineering.I have a strong foundation in HTML,CSS,Basic Javascript,Core Java and Basic SQL,
+                I'm constanly seeking new opportunities to learn and grow.
+            </p>
+
+        </div>
+        <div class="img-box"><img src="IMAGE/J-img.jpeg"></div>
+    </section>
+    <!--Home content end-->
+
+    <!--Education content start-->
+  <section id="Education" >
+    <div class="Education-title" ><h2>Education & <span>Skills</span></h2></div>
+    <div class="Education-content">
+    <div class="clg-content skills">
+        <h3>Under Graduation</h3>
+        <p>Government College of Engineering Salem</p>
+        <p>B.E[Metallurgical Engineering]</p>
+        <p >CGPA-7.5</p>
+    </div>
+    <div class="skills">
+        <img src="IMAGE/java.jpeg" >
+        <h3>Core Java/SQL</h3>
+    </div>
+    <div class="skills">
+        <img src="IMAGE/html.jpeg" class="html-img" >
+        <h3>HTML/CSS</h3>
+       
+    </div>
+    <div class="skills">
+        <img src="IMAGE/javascript.jpeg" class="javascript-img">
+        <h3>Javascript</h3>
+        
+    </div>
+</div>
+  </section>
+  <!--Education content end-->
+  
+  <!--contact content start-->
+  <section id="Contact">
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="bd4ff770-e50b-4288-9311-39e65012afae">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="name" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message"  placeholder="Your Message" cols="20" rows="10"  class="contact-inputs"required></textarea>
+        <button  type="submit" class="submit">Submit</button>
+    </form>
+  </div>
+
+  </section>
+   <!--contact content end-->
+</body>
+</html>
